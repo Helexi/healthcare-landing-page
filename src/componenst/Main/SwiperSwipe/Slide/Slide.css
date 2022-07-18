@@ -1,0 +1,42 @@
+.slide-container {
+  background-color: rgb(86, 146, 235);
+}
+
+.slide-wrap {
+  padding: 0 18px 0 18px;
+}
+
+.slide__picture {
+  width: 100%;
+}
+
+.slide__emphasize {
+  padding-top: 90px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FCFCF0;
+}
+
+.slide__header {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: -3px;
+  color: #FCFCF0;
+}
+
+.slide__salmon {
+  font-family: 'Playfair Display', serif;
+  color: #F5CABF;
+}
+
+.slide__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FCFCF0;
+  padding-bottom: 45px;
+}

@@ -1,0 +1,114 @@
+.mission-container {
+  background-color: #2D2A26;
+  color: rgb(255, 255, 255);
+}
+
+.mission-wrap {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.mission {
+  grid-area: mission;
+  padding: 0 18px 0 18px;
+}
+
+.mission__head {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: -3px;
+}
+
+.mission__red {
+  font-family: 'Playfair Display', serif;
+  color: #F87C56;
+}
+
+.mission__salmon {
+  font-family: 'Playfair Display', serif;
+  color: #F5CABF;
+}
+
+.mission__blue {
+  font-family: 'Playfair Display', serif;
+  color: #8ABADD;
+}
+
+.mission__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+  padding-bottom: 20px;
+}
+
+.mission-button {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 36px;
+  background-color: #ECB3CB;
+  box-shadow: 5px 5px 0 0 rgb(255, 255, 255);
+  color: #2D2A26;
+}
+
+.mission-button:hover {
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  transform: scale(1) translate(1px, 1px);
+}
+
+.mission__img {
+  grid-area: img;
+  background-image: url('../../../img/mission.png');
+  height: 370px;
+  width: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 800px) {
+  .mission-wrap {
+    display: grid;
+    grid-template-areas: 'img mission';
+    grid-template-columns: 1fr 1fr;
+    /* height: 640px; */
+    gap: 20px;
+  }
+
+  .mission__img {
+    margin-left: 18px;
+    background-size: contain;
+    height: auto;
+    background-position: bottom;
+    margin-top: 64px;
+  }
+
+  .mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .mission-button {
+    width: 155px;
+    height: 53px;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+
+  .mission__head {
+    padding-top: 100px;
+    max-width: 490px;
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .mission__title {
+    max-width: 500px;
+  }
+}

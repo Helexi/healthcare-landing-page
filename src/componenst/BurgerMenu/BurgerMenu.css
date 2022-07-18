@@ -1,0 +1,95 @@
+.burgerMenu__close {
+  cursor: pointer;
+  background-color: inherit;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  top: 15px;
+  position: absolute;
+  right: 15px;
+  background-color: rgb(0, 0, 0);
+  height: 18px;
+  width: 18px;
+  mask-image: url("../../img/close.png");
+  mask-repeat: no-repeat;
+  transition: all 1s;
+}
+
+.burgerMenu__menu-link {
+  text-decoration: none;
+  color: #2D2A26;
+  font-weight: 700;
+  font-size: 20x;
+  line-height: 40px;
+  color: #2D2A26;
+}
+
+.burgerMenu__menu-ul {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 65px;
+}
+
+.burgerMenu-wrap {
+  z-index: 5;
+  background: rgba(51, 51, 51, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.burgerMenu {
+  background-color: #FCFCF0;
+  border: 1px solid #2D2A26;
+  border-radius: 15px;
+  width: 305px;
+  height: 281px;
+}
+
+.burgerMenu__menu-li {
+  font-weight: 700;
+}
+
+.burgerMenu__menu-user {
+  padding-left: 65px;
+  margin-top: 10px;
+  display: block;
+  grid-area: user;
+  width: 54px;
+  height: 54px;
+  background-color: #F3F3E7;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid #2D2A26;
+  padding: 0;
+  box-shadow: 5px 5px 0 0 rgb(45, 42, 38);
+}
+
+.burgerMenu__menu-user::after {
+  margin: 0 auto;
+  content: '';
+  display: flex;
+  width: 22px;
+  height: 22px;
+  background-image: url('../../img/profile-user.png');
+}
+
+.burgerMenu__menu-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.burgerMenu__menu-li {
+  width: fit-content;
+  display: flex;
+}
+
+.burgerMenu__menu-li:hover {
+  padding-top: 5px;
+}

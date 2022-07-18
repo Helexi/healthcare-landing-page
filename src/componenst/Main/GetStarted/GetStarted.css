@@ -1,0 +1,230 @@
+.getStarted-container {
+  background: linear-gradient(270deg, #CFCDCE 0%, #DADADC 44.29%, #DEDDE2 100%);
+}
+
+.getStarted-wrap {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.getStarted {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.getStarted__emphasize {
+  margin-top: 43px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2D2A26;
+}
+
+.getStarted__lab-visit {
+  margin-bottom: 16px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 95%;
+  letter-spacing: -3px;
+  color: #2D2A26;
+}
+
+.getStarted__img {
+  background-image: url('../../../img/boy.png');
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.getStarted-wrapper {
+  padding: 0 30px 0 30px;
+}
+
+.getStarted__button {
+  font-weight: 600;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 36px;
+  background-color: #8ABADD;
+  border: 1px solid #2D2A26;
+  box-shadow: 5px 5px 0 0 rgb(45 42 38);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.getStarted__blue {
+  font-family: 'Playfair Display', serif;
+  color: #307FE2;
+}
+
+.getStarted__red {
+  font-family: 'Playfair Display', serif;
+  color: #F87C56;
+}
+
+.getStartedButtons-container {
+  background-color: #FCFCF0;;
+}
+
+.getStartedButtons-wrap {
+  max-width: 1440px;
+}
+
+.getStartedButtons-logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-areas: 
+  'blueCross united'
+  'cigna aetna';
+}
+
+.getStartedButtons-logo__blueCross {
+  grid-area: blueCross;
+}
+
+.getStartedButtons-logo__united {
+  grid-area: united;
+}
+
+.getStartedButtons-logo__cigna {
+  grid-area: cigna;
+}
+
+.getStartedButtons-logo__aetna {
+  grid-area: aetna;
+}
+
+.logo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getStartedButtons-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2D2A26;
+  padding: 16px 27px;
+  background: #F5CABF;
+  box-shadow: 5px 5px 0 0 rgb(45 42 38);
+  margin: 0 auto;
+}
+
+.getStartedButtons-button-wrap {
+  padding-bottom: 46px;
+}
+
+@media (min-width: 640px) {
+  .getStarted__emphasize {
+    display: none;
+  }
+
+  .getStarted {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .getStarted-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .getStarted__lab-visit {
+    text-align: left;
+    font-weight: 700;
+    font-size: 68px;
+  }
+
+  .getStarted__button{
+    margin-left: 0;
+  }
+
+  .getStarted__img {
+    z-index: 2;
+    position: absolute;
+    background-image: url('../../../img/boy.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 200px;
+  }
+
+  .getStarted-container {
+    background: linear-gradient(180deg, #DEDDE2 0%, #E3E6ED 44.29%, #DDE6EF 100%);
+  }
+}
+
+@media (min-width: 900px) {
+  .getStarted__img {
+    background-position-x: 300px;
+  }
+
+  .getStartedButtons-logo {
+    grid-template-areas:
+        'blueCross united cigna aetna';
+    padding: 0;
+    grid-area: logos;
+    padding-left: 20px;
+  }
+
+  .getStartedButtons-button-wrap {
+    padding: 0;
+    grid-area: button;
+  }
+
+  .getStartedButtons {
+    display: grid;
+    grid-template-areas: 'logos button';
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .getStartedButtons-wrap {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .getStarted__img {
+    position: relative;
+    background-image: url('../../../img/boy.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 0;
+  }
+
+  .getStarted-wrapper {
+    width: 55%;
+    padding: 0 18px 0 18px;
+  }
+
+  .getStarted {
+    height: 671px;
+  }
+
+  .getStartedButtons-logo {
+    padding: 0;
+  }
+}
+
+
